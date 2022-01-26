@@ -1,0 +1,306 @@
+.backgroundDiv {
+    width: 100%;
+    height: 100vh;
+    background-image: url("bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.upperDiv {
+    width: 100%;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.lowerDiv {
+    width: 100%;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+body {
+    margin: 0px;
+    background-color: blue;
+}
+
+.iWarriors {
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    margin-top: 50px;
+    cursor: pointer;
+    margin-left: -400px;
+}
+
+.iWarriors:hover {
+    width: 160px;
+    height: 160px;
+}
+
+.medi {
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    margin-left: 20px;
+    margin-top: 50px;
+    cursor: pointer;
+    margin-left: -230px;
+}
+
+.medi:hover {
+    width: 160px;
+    height: 160px;
+}
+
+.stat {
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    margin-left: 20px;
+    margin-top: 50px;
+    cursor: pointer;
+    margin-left: 230px;
+}
+
+.stat:hover {
+    width: 160px;
+    height: 160px;
+}
+
+.thunders {
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    margin-left: 20px;
+    margin-top: 50px;
+    cursor: pointer;
+    margin-left: -80px;
+}
+
+.thunders:hover {
+    width: 160px;
+    height: 160px;
+}
+
+.bulls {
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    margin-left: 20px;
+    margin-top: 50px;
+    cursor: pointer;
+    margin-left: 80px;
+}
+
+.bulls:hover {
+    width: 160px;
+    height: 160px;
+}
+
+.strikers {
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    margin-left: 20px;
+    margin-top: 50px;
+    cursor: pointer;
+    margin-left: 400px;
+}
+
+.strikers:hover {
+    width: 160px;
+    height: 160px;
+}
+
+.vs {
+    color: white;
+    font-size: 50px;
+    font-weight: bold;
+    font-family: "Arial";
+}
+
+.team1 {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    margin-top: 100px;
+    margin-left: -50px;
+}
+
+.team2 {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    margin-top: 100px;
+    margin-left: 50px;
+}
+
+.logo {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    margin-top: 150px;
+    cursor: pointer;
+}
+
+.scoreBoard {
+    width: 300px;
+    height: 80px;
+    position: absolute;
+    margin-top: 240px;
+    background-color: rgb(25, 119, 241);
+    border: none;
+    border-radius: 7px;
+    box-shadow: 0px 0px 4px 2px rgb(184, 184, 184);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.battingTeamLogo {
+    width: 40px;
+    height: 40px;
+    margin-left: -170px;
+    position: absolute;
+    margin-top: 30px;
+}
+
+.score {
+    font-family: "Arial";
+    font-size: 50px;
+    color: white;
+    font-weight: bold;
+    position: absolute;
+    margin-left: 20px;
+    margin-top: 70px;
+}
+
+.overs {
+    font-family: "Arial";
+    font-size: 20px;
+    color: white;
+    font-weight: bold;
+    position: absolute;
+    margin-left: 220px;
+    margin-top: 40px;
+}
+
+.battedTeamLogo {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    align-self: flex-start;
+    margin-left: -50px;
+}
+
+.battedTeamScore {
+    color: white;
+    position: absolute;
+    align-self: flex-start;
+    font-weight: bold;
+    font-size: 15px;
+    margin-left: 70px;
+    margin-top: 4px;
+    font-family: "Arial";
+}
+
+.matchSummary {
+    position: absolute;
+    align-self: flex-end;
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+    font-family: "Forte";
+    cursor: pointer;
+}
+
+.matchSummary:hover {
+    font-size: 32px;
+    color: rgb(218, 218, 218);
+}
+
+@media(max-width:1000px) {
+    .iWarriors {
+        position: absolute;
+        margin-left: -160px;
+    }
+    .bulls {
+        position: absolute;
+        margin-left: 15px;
+    }
+    .thunders {
+        position: absolute;
+        margin-left: 190px;
+    }
+    .medi {
+        position: absolute;
+        margin-top: 200px;
+        margin-left: -160px;
+    }
+    .stat {
+        position: absolute;
+        margin-left: 15px;
+        margin-top: 200px;
+    }
+    .strikers {
+        position: absolute;
+        margin-left: 190px;
+        margin-top: 200px;
+    }
+}
+
+@media(max-width:574px) {
+    .iWarriors {
+        margin-left: -90px;
+    }
+    .bulls {
+        margin-left: 90px;
+    }
+    .thunders {
+        margin-top: 400px;
+        position: absolute;
+        margin-left: -90px;
+    }
+    .strikers {
+        margin-top: 400px;
+        position: absolute;
+        margin-left: 90px;
+    }
+    .stat {
+        margin-left: 90px;
+    }
+    .medi {
+        margin-left: -90px;
+    }
+}
+
+@media(max-width:285px) {
+    .scoreBoard {
+        width: 280px;
+    }
+    .overs {
+        margin-left: 215px;
+    }
+    .iWarriors {
+        margin-left: -70px;
+    }
+    .bulls {
+        margin-left: 70px;
+    }
+    .stat {
+        margin-left: 70px;
+    }
+    .medi {
+        margin-left: -70px;
+    }
+    .strikers {
+        margin-left: 70px;
+    }
+    .thunders {
+        margin-left: -70px;
+    }
+}

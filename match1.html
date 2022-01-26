@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MAT Live</title>
+    <link rel="stylesheet" href="match1.css">
+    <link rel="icon" href="logo final.png">
+    <script src="script.js"></script>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+
+
+</head>
+
+<body onload="match1();">
+    <div class="container-fluid" id="bar">
+        <table align="center" max-width=700>
+            <tr>
+                <td width=14.2%>
+                    <p id="logo"><img src="Bull logo png_.png" alt="" class="img-fluid rounded" width="70px"><br></p>
+
+                </td>
+                <td rowspan="2" width=14.2%>
+                    <p>100/9<br><span>(50)</span></p>
+                </td>
+                <td rowspan="2" width=43.2%>
+                    <p>SW won by 184 runs</p>
+                </td>
+                <td rowspan="2" width=14.2%>
+                    <p>100<br><span>(24.4)</span></p>
+                </td>
+                <td width=14.2%>
+                    <p id="logo"><img src="stat1.png" alt="" class="img-fluid rounded" width="70px"><br></p>
+
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="container">
+        <!--<div class="header">
+            <div class="stage">Group Stage</div><br>
+            <div class="match">First Match</div>
+        </div>-->
+        <div class="tb">
+            <table align="center" width=100%>
+                <tr>
+                    <td>
+                        <p id="logo"><img src="Bull logo png_.png" alt="" class="img-fluid rounded"><br></p>
+
+                    </td>
+                    <td rowspan="2" width=14.2%>
+                        <p class="bullsTotal" id="bullsTotal">100/9</p><br>
+                        <p class="bullsOvers"><span>(50)</span></p>
+                    </td>
+                    <td rowspan="2" width=14.2%></td>
+                    <td rowspan="2" width=14.2%>
+                        <p class="statTotal">100</p><br>
+                        <p class="statOvers"><span>(24.4)</span>
+                        </p>
+                    </td>
+                    <td>
+                        <p id="logo"><img src="stat1.png" alt="" class="img-fluid rounded"><br></p>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p id="logoText">Brogramming<br>Bulls</p>
+                    </td>
+                    <td>
+                        <p id="logoText">Stat<br>Warrious</p>
+                    </td>
+                </tr>
+                <tr>
+                    <th colspan="5">
+                        <p id="sum">SW won by 184 runs<br><span>Group Stage - 1 of 6 (Stat Warrious Wins 2)</span></p>
+                    </th>
+                </tr>
+            </table>
+        </div>
+        <div id="poster"><img src="poster.jpg" alt="" class="rounded img-fluid"></div>
+    </div>
+    <div class="container" id="nav">
+        <div class="navbar">
+            <button class="active" onclick="document.getElementById('su').style.display='block', document.getElementById('card').style.display='none'">SUMMARY</button>
+            <button onclick="document.getElementById('card').style.display='block', document.getElementById('su').style.display='none'">SCORECARD</button>
+        </div>
+    </div>
+    <div class="container sum" id="su">
+        <br>
+        <hr>
+        <div class="title">
+            <img src="stat1.png" alt="" width="7%" class="img-fluid rounded"> Stat Warrious - 100/9 (9.5)<br><br>
+        </div>
+        <div class="pefLeft">
+            pathum Nissanka <br>55(66) <br><br> Charith Asalaka <br>52(56) <br><br> kusal Mendis <br>36(51) <br><br>
+        </div>
+        <div class="pefRight">
+            Richard Ngarava <br>2/46 (9) <br><br> Sean Williams <br>1/6 (2) <br><br> Ryan Burl <br>1/26 (6) <br><br>
+        </div>
+        <hr>
+        <div class="title">
+            <img src="Bull logo png_.png" alt="" width="9%" class="rounded img-fluid"> Brogramming Bulls - 100/9 (9.5)<br><br>
+        </div>
+        <div class="pefLeft">
+            pathum Nissanka <br>55(66) <br><br> Charith Asalaka <br>52(56) <br><br> kusal Mendis <br>36(51) <br><br>
+        </div>
+        <div class="pefRight">
+            Richard Ngarava <br>2/46 (9) <br><br> Sean Williams <br>1/6 (2) <br><br> Ryan Burl <br>1/26 (6) <br><br>
+        </div>
+    </div>
+    <div class="container" id="card" style="display:none">
+        <div class="navbar">
+            <button class="active" onclick="document.getElementById('BB').style.display='block', document.getElementById('SW').style.display='none'">Brogramming Bulls</button>
+            <button onclick="document.getElementById('SW').style.display='block', document.getElementById('BB').style.display='none'">Stat Warrious</button>
+        </div>
+        <div class="tb" id="BB">
+            <table width="100%">
+                <tr>
+                    <td width="72%">Batting</td>
+                    <td width="5%">R</td>
+                    <td width="5%">B</td>
+                    <td width="5%">4s</td>
+                    <td width="5%">6s</td>
+                    <td width="8%">S/R</td>
+                </tr>
+                <tr>
+                    <td>Kavisha Abhishake (C)<br><span>run out(sub)</span></td>
+                    <td id="kavishkaRuns">55</td>
+                    <td id="kavishkaBalls">66</td>
+                    <td>4</td>
+                    <td>0</td>
+                    <td>83.33</td>
+                </tr>
+                <tr>
+                    <td>Nipul Yansith (VC)<br><span>c Blessing Muzzarabani b Wellington Masakadza</span></td>
+                    <td id="nipulRuns">55</td>
+                    <td id="nipulBalls">66</td>
+                    <td>4</td>
+                    <td>0</td>
+                    <td>83.33</td>
+                </tr>
+                <tr>
+                    <td>Bhanuka Nayanajith<br><span>c & b Ryan Burl</span></td>
+                    <td id="bhanukaRuns">55</td>
+                    <td id="bhanuksBalls">66</td>
+                    <td>4</td>
+                    <td>0</td>
+                    <td>83.33</td>
+                </tr>
+                <tr>
+                    <td>Bimsara Anjana<br><span>rrun out (Ryan Burl)</span></td>
+                    <td id="bimsaraRuns">55</td>
+                    <td id="bimsaraBalls">66</td>
+                    <td>4</td>
+                    <td>0</td>
+                    <td>83.33</td>
+                </tr>
+                <tr>
+                    <td>Sasanka Udana<br><span>b Blessing Muzarabani</span></td>
+                    <td id="sasankaRuns">55</td>
+                    <td id="sasankaBalls">66</td>
+                    <td>4</td>
+                    <td>0</td>
+                    <td>83.33</td>
+                </tr>
+                <tr>
+                    <td>Lasith Madhuka<br><span>not out</span></td>
+                    <td id="lasithRuns">55</td>
+                    <td id="lasithBalls">66</td>
+                    <td>4</td>
+                    <td>0</td>
+                    <td>83.33</td>
+                </tr>
+                <tr>
+                    <td>Sanuth Kalhan<br><span>not out</span></td>
+                    <td id="sanuthRuns">55</td>
+                    <td id="sanuthBalls">66</td>
+                    <td>4</td>
+                    <td>0</td>
+                    <td>83.33</td>
+                </tr>
+                <tr>
+                    <td>Lakruwan Kasun<br><span>run out(sub)</span></td>
+                    <td id="lakruwanRuns">55</td>
+                    <td id="lakruwanBalls">66</td>
+                    <td>4</td>
+                    <td>0</td>
+                    <td>83.33</td>
+                </tr>
+                <tr>
+                    <td>Lumbini Randika<br><span>run out(sub)</span></td>
+                    <td id="lumbiniRuns">55</td>
+                    <td id="lumbiniBalls">66</td>
+                    <td>4</td>
+                    <td>0</td>
+                    <td>83.33</td>
+                </tr>
+                <tr>
+                    <td>Chathuni Ranasinghe<br><span>run out(sub)</span></td>
+                    <td id="chathuniRuns">55</td>
+                    <td id="chathuniBalls">66</td>
+                    <td>4</td>
+                    <td>0</td>
+                    <td>83.33</td>
+                </tr>
+                <tr>
+                    <td>Masha Wickramasinghe<br><span>run out(sub)</span></td>
+                    <td id="mashaRuns">55</td>
+                    <td id="mashaBalls">66</td>
+                    <td>4</td>
+                    <td>0</td>
+                    <td>83.33</td>
+                </tr>
+                <tr>
+                    <td>Extras</td>
+                    <td>7</td>
+                    <td colspan="4">(NB 1, W 3,B 2,LB 1)</td>
+                </tr>
+                <tr>
+                    <td>Total runs</td>
+                    <td colspan="5">254 (9 wkts, 50 ov)</td>
+                </tr>
+                <tr>
+                    <td colspan="6">
+                        Fall of Wickets<br> 80/1 <span>(K.Mendis, 17.2 ov)</span> 101/2 <span>(p.Nissanka, 22.2 ov)</span> 107/3 <span>(K.Mendis, 23.1 ov)</span> 149/4 <span>(D.Chandimal, 30.6 ov)</span> 185/5 <span>(D.Shanaka, 38.4 ov)</span> 193/6 <span>(C.Asalanka, 40.4 ov)</span>                        241/7 <span>(R.Mendis, 47.4 ov)</span> 247/8 <span>(D.Chameera, 48.5 ov)</span> 249/9 <span>(C.Karunarathne), 49.2 ov</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Bowling</td>
+                    <td>O</td>
+                    <td>M</td>
+                    <td>R</td>
+                    <td>W</td>
+                    <td>Econ</td>
+                </tr>
+                <tr>
+                    <td>Bowling</td>
+                    <td>O</td>
+                    <td>M</td>
+                    <td>R</td>
+                    <td>W</td>
+                    <td>Econ</td>
+                </tr>
+                <tr>
+                    <td>Tendai Chatara</td>
+                    <td>7.0</td>
+                    <td>0</td>
+                    <td>35</td>
+                    <td>1</td>
+                    <td>5.0</td>
+                </tr>
+                <tr>
+                    <td>Blessing Muzarabani</td>
+                    <td>10.0</td>
+                    <td>0</td>
+                    <td>63</td>
+                    <td>1</td>
+                    <td>6.30</td>
+                </tr>
+                <tr>
+                    <td>Richard Ngararava</td>
+                    <td>9.0</td>
+                    <td>1</td>
+                    <td>46</td>
+                    <td>2</td>
+                    <td>5.11</td>
+                </tr>
+                <tr>
+                    <td>Wellington Masakadza</td>
+                    <td>10.0</td>
+                    <td>0</td>
+                    <td>42</td>
+                    <td>1/td>
+                        <td>4.20</td>
+                </tr>
+            </table>
+        </div>
+        <div class="tb" id="SW" style="display:none">
+            <table width="100%">
+                <tr>
+                    <td width="72%">Batting</td>
+                    <td width="5%">R</td>
+                    <td width="5%">B</td>
+                    <td width="5%">4s</td>
+                    <td width="5%">6s</td>
+                    <td width="8%">S/R</td>
+                </tr>
+                <tr>
+                    <td>Kavisha Abhishake (C)<br><span>run out(sub)</span></td>
+                    <td>55</td>
+                    <td>66</td>
+                    <td>4</td>
+                    <td>0</td>
+                    <td>23.33</td>
+                </tr>
+                <tr>
+                    <td>Nipul Yansith (VC)<br><span>c Blessing Muzzarabani b Wellington Masakadza</span></td>
+                    <td>55</td>
+                    <td>66</td>
+                    <td>4</td>
+                    <td>0</td>
+                    <td>83.13</td>
+                </tr>
+                <tr>
+                    <td>Bhanuka Nayanajith<br><span>c & b Ryan Burl</span></td>
+                    <td>55</td>
+                    <td>66</td>
+                    <td>4</td>
+                    <td>0</td>
+                    <td>34.33</td>
+                </tr>
+                <tr>
+                    <td>Bimsara Anjana<br><span>rrun out (Ryan Burl)</span></td>
+                    <td>55</td>
+                    <td>66</td>
+                    <td>4</td>
+                    <td>0</td>
+                    <td>43.33</td>
+                </tr>
+                <tr>
+                    <td>Sasanka Udana<br><span>b Blessing Muzarabani</span></td>
+                    <td>55</td>
+                    <td>66</td>
+                    <td>4</td>
+                    <td>0</td>
+                    <td>67.33</td>
+                </tr>
+                <tr>
+                    <td>Lasith Madhuka<br><span>not out</span></td>
+                    <td>55</td>
+                    <td>66</td>
+                    <td>4</td>
+                    <td>0</td>
+                    <td>89.33</td>
+                </tr>
+                <tr>
+                    <td>Sanuth Kalhan<br><span>not out</span></td>
+                    <td>55</td>
+                    <td>66</td>
+                    <td>4</td>
+                    <td>0</td>
+                    <td>67.33</td>
+                </tr>
+                <tr>
+                    <td>Lakruwan Kasun<br><span>run out(sub)</span></td>
+                    <td>55</td>
+                    <td>66</td>
+                    <td>4</td>
+                    <td>0</td>
+                    <td>45.33</td>
+                </tr>
+                <tr>
+                    <td>Lumbini Randika<br><span>run out(sub)</span></td>
+                    <td>55</td>
+                    <td>66</td>
+                    <td>4</td>
+                    <td>0</td>
+                    <td>83.33</td>
+                </tr>
+                <tr>
+                    <td>Chathuni Ranasinghe<br><span>run out(sub)</span></td>
+                    <td>55</td>
+                    <td>66</td>
+                    <td>4</td>
+                    <td>0</td>
+                    <td>83.33</td>
+                </tr>
+                <tr>
+                    <td>Masha Wickramasinghe<br><span>run out(sub)</span></td>
+                    <td>55</td>
+                    <td>66</td>
+                    <td>4</td>
+                    <td>0</td>
+                    <td>83.33</td>
+                </tr>
+                <tr>
+                    <td>Extras</td>
+                    <td>7</td>
+                    <td colspan="4">(NB 1, W 3,B 2,LB 1)</td>
+                </tr>
+                <tr>
+                    <td>Total runs</td>
+                    <td colspan="5">254 (9 wkts, 50 ov)</td>
+                </tr>
+                <tr>
+                    <td colspan="6">
+                        Fall of Wickets<br> 80/1 <span>(K.Mendis, 17.2 ov)</span> 101/2 <span>(p.Nissanka, 22.2 ov)</span> 107/3 <span>(K.Mendis, 23.1 ov)</span> 149/4 <span>(D.Chandimal, 30.6 ov)</span> 185/5 <span>(D.Shanaka, 38.4 ov)</span> 193/6 <span>(C.Asalanka, 40.4 ov)</span>                        241/7 <span>(R.Mendis, 47.4 ov)</span> 247/8 <span>(D.Chameera, 48.5 ov)</span> 249/9 <span>(C.Karunarathne), 49.2 ov</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Bowling</td>
+                    <td>O</td>
+                    <td>M</td>
+                    <td>R</td>
+                    <td>W</td>
+                    <td>Econ</td>
+                </tr>
+                <tr>
+                    <td>Bowling</td>
+                    <td>O</td>
+                    <td>M</td>
+                    <td>R</td>
+                    <td>W</td>
+                    <td>Econ</td>
+                </tr>
+                <tr>
+                    <td>Tendai Chatara</td>
+                    <td>7.0</td>
+                    <td>0</td>
+                    <td>35</td>
+                    <td>1</td>
+                    <td>5.0</td>
+                </tr>
+                <tr>
+                    <td>Blessing Muzarabani</td>
+                    <td>10.0</td>
+                    <td>0</td>
+                    <td>63</td>
+                    <td>1</td>
+                    <td>6.30</td>
+                </tr>
+                <tr>
+                    <td>Richard Ngararava</td>
+                    <td>9.0</td>
+                    <td>1</td>
+                    <td>46</td>
+                    <td>2</td>
+                    <td>5.11</td>
+                </tr>
+                <tr>
+                    <td>Wellington Masakadza</td>
+                    <td>10.0</td>
+                    <td>0</td>
+                    <td>42</td>
+                    <td>1/td>
+                        <td>4.20</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <div class="footer container">
+        <span>Toss:</span> SW won the toss and decided to bat<br>
+    </div>
+
+    <script>
+        //Get the bar
+        var scorebar = document.getElementById("bar");
+
+        // When the user scrolls down 20px from the top of the document, show the bar
+        window.onscroll = function() {
+            scrollFunction()
+        };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+                scorebar.style.display = "block";
+            } else {
+                scorebar.style.display = "none";
+            }
+        }
+    </script>
+
+</body>
+
+</html>
